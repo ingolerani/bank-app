@@ -1,30 +1,3 @@
-'''
-x = 10 #global var
-
-def fun1():
-    global x
-    y = 20 #local var
-    y = y + 1
-    x = x + 5
-    print("locally in fun1, x=",x)#10
-    print("locally in fun1, y=",y)#20
-    #print("locally in fun1, z=",z)#NameError
-
-def fun2():
-    z = 30 #local var
-    z = z * 2
-    print("locally in fun2, x=",x)#10
-    print("locally in fun2, z=",z)#30
-    #print("locally in fun2, y=",y)#NameError
-
-print("globally, x=", x)
-#print("globally, y=", y)#NameError: name 'y' is not defined
-#print("globally, z=", z) #NameError: name 'z' is not defined
-
-fun1()
-fun2()
-'''
-
 balance = 0
 def check_balance():
     print("Total Balance:", balance)
